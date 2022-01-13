@@ -4,9 +4,9 @@ from common import dprint
 from scipy.optimize import linear_sum_assignment
 # sklearn里的linear_assignment()以及scipy里的linear_sum_assignment()都实现了匈牙利算法，两者的返回值的形式不同
 # sklearn API result:           scipy API result:
-# [[0 1]                        (array([0, 1, 2], dtype=int64), array([1, 0, 2], dtype=int64))
-# [1 0]
-# [2 2]]
+# [[0 1]                        (array([0, 2, 3], dtype=int64), array([1, 0, 2], dtype=int64))
+# [2 0]
+# [3 2]]
 
 class Track(object):
     """Track class for every object to be tracked"""
